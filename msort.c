@@ -52,11 +52,12 @@ void * merge(void * input) {
 
 		} else {
 
-			if (*left == *right) dupes++;
+			if (*left == *right) {
+				dupes++;
+			}
 			temp[j] = *right;
 			R_count++;
 			right++;
-
 		}
 		j++;
 	}
