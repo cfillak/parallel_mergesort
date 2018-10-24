@@ -5,7 +5,7 @@
 #include <string.h>
 #include <limits.h>
 
-#define CHAR_MEM 512	// nu
+#define CHAR_MEM 512
 
 typedef struct _seg_t {
 
