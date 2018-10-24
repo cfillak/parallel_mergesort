@@ -1,4 +1,3 @@
-/** @file msort.c */
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +46,6 @@ void * merge(void * input) {
 	while (L_count < L_size && R_count < R_size) {
 
 		if ( *left < *right ) {
-
 			temp[j] = *left;
 			L_count++;
 			left++;
@@ -60,9 +58,7 @@ void * merge(void * input) {
 			right++;
 
 		}
-
 		j++;
-
 	}
 
 
@@ -193,7 +189,6 @@ int main(int argc, char **argv) {
 
 		values_per_segment *= 2;
 	}
-
 
 	for (i = 0; i < input_count; i++) {
 		printf("%i\n", list[i]);
